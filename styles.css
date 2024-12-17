@@ -57,7 +57,7 @@
     width: 70%;
     height: auto;
     padding: 8px 8px;
-    margin: 0;
+    margin: 80px 0;
     transition: color 0.1s;
   }
   section div.quote {
@@ -106,9 +106,10 @@
     border-radius: 40px;
     z-index: 2;
   }
-  footer img {
+  footer svg {
     cursor: pointer;
   }
-  footer.prev {
-    fill: #000000;
+
+  footer .change {
+    stroke: currentColor;
   }
