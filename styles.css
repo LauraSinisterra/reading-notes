@@ -91,7 +91,6 @@
     height: 70%;
     padding: 40px 40px;
     transition: color 0.1s;
-
   }
   section div.title {
     width: 100%;
@@ -167,3 +166,46 @@
     stroke: currentColor;
   }
 
+  @media screen and (min-width: 320px){
+    section {
+      padding: 24px 16px;
+    }
+    section div.circle {
+      width:  7vmin;
+      height: 7vmin;
+      margin: 8px 0 0 0;
+    }
+    section div.quote {
+      margin: 24px 0;
+    }
+    h1 {
+      font-size: 7vmin;
+    }
+    h2 {
+      font-size: 7vmin;
+    }
+    p {
+      font-size: 4vmin;
+    }
+    p.number {
+      font-size: 4vmin;
+    }
+    section div.quote p.tags {
+      font-size: 3vmin;
+    }
+    section div.quote p.source {
+      font-size: 3vmin;
+    }
+    section div.quote span.book {
+      font-size: 3vmin;
+    }
+    footer {
+      bottom: 8px;
+      padding: 4px;
+    }
+    div.buttons {
+      width: 50%;
+      padding: 4px 4px;
+      margin-bottom: 24px;
+    }
+  }
