@@ -74,12 +74,8 @@ const updateSection = function(){
     outputTag.innerHTML = pageNumber
     subjectTag.innerHTML = subject[pageNumber].copy
     quoteTag.innerHTML = subject[pageNumber].quote
-    circleTag.style.borderColor = subject[pageNumber].color
     bodyTag.style.color = subject[pageNumber].color
     subjectTag.style.backgroundColor = subject[pageNumber].color
-    borderTag.style.borderColor = subject[pageNumber].color
-    footerTag.style.borderColor = subject[pageNumber].color
-    footerImgTag.style.fill = subject[pageNumber].color
     authorTag.innerHTML = subject[pageNumber].author
     bookTag.innerHTML = subject[pageNumber].book
 }
@@ -105,5 +101,22 @@ document.addEventListener("keyup", function(event){
     }
     if (event.key == "ArrowLeft"){
         previous()
+    }
+})
+
+// sidebar info open and close
+
+const toggleTag = document.querySelector("a.toggle-nav")
+const mainTag = document.querySelector("main")
+
+// toggle a class of open
+
+toggleTag.addEventListener("click", function(){
+    mainTag.classList.toggle("open")
+
+    if(mainTag.classList.contains("open")){
+        toggleTag.innerHTML = "close"
+    } else {
+        toggleTag.innerHTML = "info"
     }
 })
