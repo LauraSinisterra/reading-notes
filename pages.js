@@ -82,7 +82,6 @@ const updateSection = function(){
     footerImgTag.style.fill = subject[pageNumber].color
     authorTag.innerHTML = subject[pageNumber].author
     bookTag.innerHTML = subject[pageNumber].book
-    nextTag.style.stroke = subject[pageNumber].color
 }
 
 // what happens on click
