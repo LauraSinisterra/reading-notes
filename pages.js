@@ -30,9 +30,9 @@ const subject = [
 
 
 // pick tags
-const nextTag = document.querySelector("footer img.next")
-const previousTag = document.querySelector("footer img.prev")
-const randomTag = document.querySelector("footer img.random")
+const nextTag = document.querySelector("footer svg.next")
+const previousTag = document.querySelector("footer svg.prev")
+const randomTag = document.querySelector("footer svg.random")
 const outputTag = document.querySelector("div p.number")
 const subjectTag = document.querySelector("section h2.subject")
 const quoteTag = document.querySelector("section div.quote p.quote-text")
@@ -40,7 +40,7 @@ const circleTag = document.querySelector("section div.circle")
 const bodyTag = document.querySelector("body")
 const borderTag = document.querySelector("section div.quote")
 const footerTag = document.querySelector("footer")
-const footerImgTag = document.querySelector("footer img")
+const footerImgTag = document.querySelector("footer object")
 const authorTag = document.querySelector("section div.quote span.author")
 const bookTag = document.querySelector("section div.quote span.book")
 
@@ -56,7 +56,7 @@ const next = function () {
 // reduce page number
 const previous = function () {
     pageNumber -= 1
-    if (pageNumber < 0 ) {
+    if (pageNumber <= 0 ) {
         pageNumber = subject.length - 1
     }
     updateSection()
@@ -66,7 +66,6 @@ const previous = function () {
 
 const random = function () {
     pageNumber = Math.floor(Math.random() * subject.length)
-
     updateSection()
 }
 
@@ -83,6 +82,7 @@ const updateSection = function(){
     footerImgTag.style.fill = subject[pageNumber].color
     authorTag.innerHTML = subject[pageNumber].author
     bookTag.innerHTML = subject[pageNumber].book
+    nextTag.style.stroke = subject[pageNumber].color
 }
 
 // what happens on click
