@@ -138,10 +138,6 @@
     text-align: center;
     padding: 4px 16px;
     border-radius: 16px;
-  }
-  div.info :hover {
-    color: currentColor;
-  }
   footer {
     position: fixed;
     bottom: 24px;
@@ -151,10 +147,6 @@
     justify-content: center;
     align-items: center;
     padding: 4px;
-  }
-  footer :hover {
-    background-color: #fafafa;
-    transition: 0.5s;
   }
   div.buttons {
     width: 30%;
