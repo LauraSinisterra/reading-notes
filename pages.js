@@ -114,6 +114,11 @@ const navClose = document.querySelector("nav")
 
 navClose.addEventListener("click", function(){
     mainTag.classList.toggle("open")
+    if(mainTag.classList.contains("open")){
+        toggleTag.innerHTML = "close"
+    } else {
+        toggleTag.innerHTML = "info"
+    }
 })
 
 toggleTag.addEventListener("click", function(){
