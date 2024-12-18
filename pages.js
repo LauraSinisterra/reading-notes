@@ -108,12 +108,16 @@ document.addEventListener("keyup", function(event){
 
 const toggleTag = document.querySelector("a.toggle-nav")
 const mainTag = document.querySelector("main")
+const navClose = document.querySelector("nav")
 
 // toggle a class of open
 
+navClose.addEventListener("click", function(){
+    mainTag.classList.toggle("open")
+})
+
 toggleTag.addEventListener("click", function(){
     mainTag.classList.toggle("open")
-
     if(mainTag.classList.contains("open")){
         toggleTag.innerHTML = "close"
     } else {
