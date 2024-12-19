@@ -189,7 +189,6 @@
     }
     main.open{
       transform: translate(170px, 0);
-      width: 100%;
     }
     h1 {
       font-size: 7vmin;
