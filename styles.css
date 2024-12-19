@@ -17,6 +17,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   nav {
     position: fixed;
@@ -139,6 +140,7 @@
     text-align: center;
     padding: 4px 16px;
     border-radius: 16px;
+    margin-bottom: 16px;
   }
   footer {
     position: fixed;
@@ -151,12 +153,13 @@
     padding: 4px;
   }
   div.buttons {
-    width: 30%;
+    width: 40%;
     height: fit-content;
     display: flex;
     justify-content:space-between;
     align-items: center;
     border: 2px solid currentColor;
+    background-color: #ffffff;
     padding: 8px 8px;
     border-radius: 40px;
     margin-bottom: 40px;
@@ -168,17 +171,17 @@
     stroke: currentColor;
   }
 
-  @media screen and (min-width: 320px){
+  @media screen and (min-width: 320px) and (max-width: 680px){
     section {
       padding: 24px 16px;
     }
     section div.circle {
       width:  7vmin;
       height: 7vmin;
-      margin: 8px 0 0 0;
+      margin: 24px 0 0 0;
     }
     section div.quote {
-      margin: 24px 0;
+      margin: 40px 0;
     }
     nav {
       width: 150px;
@@ -215,7 +218,7 @@
       padding: 4px;
     }
     div.buttons {
-      width: 50%;
+      width: 40%;
       padding: 4px 4px;
       margin-bottom: 24px;
     }
