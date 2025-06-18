@@ -128,4 +128,8 @@ toggleTag.addEventListener("click", function(){
     } else {
         toggleTag.innerHTML = "info"
     }
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> origin/main
