@@ -15,43 +15,27 @@
     background-color: #ffffff;
     color: #ff0000;
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     min-height: 100vh;
-=======
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
->>>>>>> origin/main
   }
   nav {
     position: fixed;
     bottom: 0;
-<<<<<<< HEAD
-=======
     left: 0;
->>>>>>> origin/main
     display: flex;
     flex-direction: column;
     justify-content: end;
     padding: 16px 16px;
     margin: 16px;
-<<<<<<< HEAD
-    width: 70%;
-    height: 20%;
-    background-color: #ffffff;
-    color: currentColor;
-    z-index: 0;
-=======
     width: 200px;
     height: 90%;
     background-color: #ffffff;
     color: currentColor;
->>>>>>> origin/main
+    z-index: 1;
   }
   nav a {
     font-family: "happy-times-italic";
@@ -64,34 +48,22 @@
   }
   main {
     width: 100%;
-<<<<<<< HEAD
     max-width: 800px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    min-height: 100vh;
-=======
-    position: relative;
-    z-index: 1;
-    height: 99vh;
->>>>>>> origin/main
+    min-height: 80vh;
     background-color: #ffffff;
     justify-content: center;
     text-align: center;
     transition: transform 0.5s;
     border: currentColor 2px solid;
     border-radius: 16px;
-<<<<<<< HEAD
     display: flex;
     align-items: center;
   }
   main.open{
-    transform: translate(0, -350px);
-=======
-  }
-  main.open{
     transform: translate(262px, 0);
->>>>>>> origin/main
   }
   h1 {
     text-decoration: none;
@@ -127,15 +99,10 @@
     position: flex;
     flex-direction: column;
     height: 70%;
-<<<<<<< HEAD
-    padding: 0  0 24px 0;
+    padding: 40px 40px;
     transition: color 0.1s;
     max-width: 1000px;
     margin: 0 auto;
-=======
-    padding: 40px 40px;
-    transition: color 0.1s;
->>>>>>> origin/main
   }
   section div.title {
     width: 100%;
@@ -157,11 +124,7 @@
     display: inline-flex;
     text-align: center;
     justify-content: center;
-<<<<<<< HEAD
-    margin: 0;
-=======
     margin: 24px 0 0 0;
->>>>>>> origin/main
   }
   section div.quote p.tags {
     font-family: "happy-times-italic";
@@ -181,11 +144,7 @@
     height: fit-content;
     font-family: "happy-times-italic";
     color: currentColor;
-<<<<<<< HEAD
-    border: currentColor 1px solid;
-=======
     border: currentColor 2px dotted;
->>>>>>> origin/main
     background-color: #ffffff;
     text-align: center;
     padding: 4px 16px;
@@ -234,21 +193,12 @@
       margin: 40px 0;
     }
     nav {
-<<<<<<< HEAD
-      width: 100%;
-      padding: 8px 8px;
-      margin: 0x;
-    }
-    main.open{
-      transform: translate(0, -350px);
-=======
       width: 150px;
       padding: 8px 8px;
       margin: 4px;
     }
     main.open{
       transform: translate(170px, 0);
->>>>>>> origin/main
     }
     h1 {
       font-size: 7vmin;
@@ -280,8 +230,4 @@
       padding: 4px 4px;
       margin-bottom: 24px;
     }
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> origin/main
