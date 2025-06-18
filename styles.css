@@ -30,7 +30,7 @@
     justify-content: end;
     padding: 16px 16px;
     margin: 16px;
-    width: 50%;
+    max-width: 700px;
     height: 400px;
     background-color: #ffffff;
     color: currentColor;
