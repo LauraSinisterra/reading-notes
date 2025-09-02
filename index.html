@@ -5,68 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>"A quote on"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <p>
-          "A quote on" is a project showing citations from diverse disciplines merging interaction design, philosophy of technology, media studies, and diagrams. <br><br>A dynamic tool for encountering ideas.<br><br>And an active creativity project made for learning and practicing Javascript.
-        </p>
-        <a href="https://laurasinisterra.com">laurasinisterra.com</a>
-        <a href="https://github.com/LauraSinisterra/reading-notes">source</a>
-      <div class="info">
-        <a href="#">close</a>
+    <div class="top-row" id="circles-container">
+    </div>
+    <section class="about-section">
+      <div class="close-info">
+        <a href="#">x</a>
       </div>
-  </nav>
-    <main>
+      <div class="about-container">  
+        <p><q class="name">A quote on</q>
+        is a project showing citations and annotations from diverse disciplines merging interaction design, philosophy of technology, media studies, and diagrams. <br><br>A dynamic tool for encountering ideas and an active creativity project made for learning and practicing Javascript.
+      </p>
+      </div>
+      <div class="about-links">
+        Made by
+        <a href="https://laurasinisterra.com">Laura Sinisterra</a>
+      </div>
+    </section>
       <section>
-        <div class="circle">
-          <p class="number">
-            1
-          </p>
-        </div>
         <div class="title">
-          <h1>A quote on</h1>
-          <h2 class="subject">interaction design</h2>
+          <div class="info-container">
+          <div class="info">
+            <a href="#">i</a>
+          </div>
+          </div>
+          <div class="title-text">  
+            <h1>A quote on</h1>
+            <h2 class="subject">interaction design</h2>
+          </div>
         </div>
         <div class="quote">
           <p class="quote-text">
-            "We've come to a stage when computer technology needs to be designed as part of everyday culture, so that it's beautiful and intriguing, so that it has emotive as well as functional qualities."
+             <q>
+            We've come to a stage when computer technology needs to be designed as part of everyday culture, so that it's beautiful and intriguing, so that it has emotive as well as functional qualities.
+          </q>
           </p>
-          <p class="source">
-            - <span class="author">Bill Moggridge</span>, <span class="book">Designing interactions</span>
-          </p>
+      </div>
+      <div class="source"> 
+        <p class="source-text">
+          <svg class="source-icon" width="60" height="8" viewBox="0 0 60 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H60" stroke="var(--secondary-color, #FFB8BC)" stroke-width="1"/>
+          </svg>
+          <span class="book">Designing interactions</span>, <span class="author"> Bill Moggridge</span> 
+        </p>
       </div>
       </section>
     <footer>
-      <div class="buttons">
-        <svg class="prev" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_281_32760)">
-          <path class="change" d="M27 16H5" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="change" d="M14 7L5 16L14 25" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-          </svg>        
-        <svg class="random" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_281_32764)">
-          <path class="change" d="M4 9H6.8825C8.15591 8.99997 9.41093 9.30392 10.5432 9.88659C11.6755 10.4693 12.6523 11.3138 13.3925 12.35L18.6075 19.65C19.3477 20.6862 20.3245 21.5307 21.4568 22.1134C22.5891 22.6961 23.8441 23 25.1175 23H29" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="change" d="M26 6L29 9L26 12"stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="change" d="M26 20L29 23L26 26" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="change" d="M18.457 12.5588L18.607 12.35C19.3472 11.3138 20.324 10.4693 21.4563 9.88659C22.5886 9.30392 23.8436 8.99997 25.117 9H28.9995" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="change" d="M4 23H6.8825C8.15591 23 9.41093 22.6961 10.5432 22.1134C11.6755 21.5307 12.6523 20.6862 13.3925 19.65L13.5425 19.4412" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-          </svg>
-        <svg class="next" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_281_32756)">
-          <path class="change" d="M5 16H27" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="change" d="M18 7L27 16L18 25" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-          </svg>
-      </div>
-      <div class="info">
-        <a href="#" class="toggle-nav">info</a>
+      <div class="button-container">
+        <div class="button">
+          <svg class="prev" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_281_32760)">
+            <path class="change" d="M27 16H5" stroke="#FFB8BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="change" d="M14 7L5 16L14 25" stroke="#FFB8BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </svg>
+        </div>
+        <div class="button">  
+          <svg class="random" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_281_32764)">
+            <path class="change" d="M4 9H6.8825C8.15591 8.99997 9.41093 9.30392 10.5432 9.88659C11.6755 10.4693 12.6523 11.3138 13.3925 12.35L18.6075 19.65C19.3477 20.6862 20.3245 21.5307 21.4568 22.1134C22.5891 22.6961 23.8441 23 25.1175 23H29" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="change" d="M26 6L29 9L26 12"stroke="#FFB8BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="change" d="M26 20L29 23L26 26" stroke="#FFB8BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="change" d="M18.457 12.5588L18.607 12.35C19.3472 11.3138 20.324 10.4693 21.4563 9.88659C22.5886 9.30392 23.8436 8.99997 25.117 9H28.9995" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="change" d="M4 23H6.8825C8.15591 23 9.41093 22.6961 10.5432 22.1134C11.6755 21.5307 12.6523 20.6862 13.3925 19.65L13.5425 19.4412" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </svg>
+        </div>
+        <div class="button">
+          <svg class="next" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_281_32756)">
+            <path class="change" d="M5 16H27" stroke="#FFB8BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="change" d="M18 7L27 16L18 25" stroke="#FFB8BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </svg>
+        </div>
       </div>
     </footer>
     <script src="pages.js"></script>
-  </main>
   </body>
 </html>
